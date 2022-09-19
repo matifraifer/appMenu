@@ -1,0 +1,46 @@
+<div class="contenedorBotonesScroll">
+   <input type="search" class="input_search" placeholder="Buscá tus productos favoritos" name="filterPost" [(ngModel)]="filterPost"   >
+</div>
+<div class="nombre_categoria">
+    {{categoria1}}
+</div>
+<ul class="contenedor_lista">
+    <li *ngFor="let local of localElegido | filter:filterPost | categorias:categoria1" class="contenedor_item">
+        <div class="contenedor_nombre_precio">
+            <h3 >
+                {{local.nombre | uppercase   }}
+            </h3>
+            <div class="descripcion">
+                {{local.descripcion}}
+            </div>
+            <h3 class="precio">
+                ${{local.precio }}
+            </h3>
+        </div>
+    </li> 
+</ul>
+
+<div class="nombre_categoria">
+    {{categoria2}}
+</div>
+<ul class="contenedor_lista">
+    <li *ngFor="let local of localElegido | categorias:categoria2 | filter:filterPost" class="contenedor_item">
+        <div class="contenedor_nombre_precio">
+            <h3 >
+                {{local.nombre | uppercase   }}
+            </h3>
+            <div class="descripcion">
+                {{local.descripcion}}
+            </div>
+            <h3 class="precio">
+                ${{local.precio }}
+            </h3>
+        </div>
+    </li> 
+</ul>
+
+
+
+
+
+

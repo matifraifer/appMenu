@@ -1,0 +1,59 @@
+.boton_redirect_home{
+    background-color: white;
+    height: 10vh;
+    border-radius: 15px;
+    margin-top: 20px;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-left: 10px;
+    display: flex;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+
+}
+h3{
+    color: black;
+}
+img{
+    width: 3em;
+}
+.fondo_icono{
+    background-color: rgb(228, 72, 72);
+    border-radius: 15px;
+    width: 4em;
+    height: 4em;
+    margin-right: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#logoAntares{
+    background-image: url(../../../assets/images/descarga.png);
+    background-position: center;
+    background-size: cover;
+}
+#logoFrappe{
+    background-image: url(../../../assets/images/logofrappe.png     );
+    background-position: center;
+    background-size: cover;
+}
+#imagen_bebidas{
+
+    background-size: cover;
+    background-position: 0px 0px 10px;
+}
+
+#imagen_comidas{
+
+    background-size: cover;
+    background-position: 0px 0px 30px;
+
+}
+#imagen_entradas{
+
+    background-size: cover;
+}

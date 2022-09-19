@@ -1,0 +1,139 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+::-webkit-scrollbar {
+    display: none;
+}
+h3{
+    font-weight: bolder;
+    animation-duration: 1s;
+    animation-name: slidein;
+}
+ul{
+    animation-name: opacidad;
+    animation-duration: 1s;
+    font-size: small;
+}
+li{
+    background-color: white;
+    border-radius: 20px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 20px;
+}
+
+.input_search{
+    width: 90%;
+    height: 30px;
+    border-radius: 50px;
+    border: none;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.16);
+    margin-top: 50px;
+    padding-left: 10px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}   
+
+.input_search::placeholder{
+    font-weight: bold;
+    color: rgb(172, 172, 172);
+}
+.contenedorBotonesScroll{
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 30px;
+}
+.botonScroll{
+    background-color: rgb(255, 100, 0);
+    height: 10em;
+    width: 5em;
+    border: none;
+    overflow:hidden;
+    border-radius: 15px;
+    color: white;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    margin-right: 1em;
+    flex-basis: 25%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.textoBoton{
+    transform: rotate(180deg);
+    font-weight: bold;
+    writing-mode: vertical-rl;
+    justify-content: left;
+}
+
+.imagenBotonScroll{
+    width: 70%;
+}
+
+.contenedor_nombre_precio{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 100px;
+    margin: 10px;    
+}
+.nombre_categoria{
+    background-color: transparent;
+    margin-top: 10px;
+    margin-left: 15px;
+    border-radius: 20px 20px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: start;
+    font-size: x-large;
+    font-weight: bolder;
+    text-transform: capitalize;
+}
+.precio{
+    color: #E54660;
+}
+
+.cabecera_comidas{
+    background-color: rgb(255, 100, 0);
+    color: white;
+    padding: 1em 2em;
+    margin-top: 20px;
+    margin-right: 2px;
+    margin-left: 2px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0px 10px 10px 1px rgba(0,0,0,0.16);
+}
+
+.contenedor_item{
+    background-color: white;
+    margin: 15px;
+    padding-left: 10px;
+    box-shadow: 0px 5px 10px 1px rgba(0,0,0,0.16);
+}
+@keyframes slidein {
+    from{
+        margin-top: 100px;
+    }
+    to{
+        margin-top: 0px;
+    }
+  }
+
+@keyframes opacidad{
+    from{
+        opacity: 0%;
+    }
+    to{
+        opacity: 100%;
+    }
+}
+

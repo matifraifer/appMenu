@@ -1,0 +1,20 @@
+<form action="" [formGroup]="crearProducto" (ngSubmit)="agregarProducto()">
+    <label for=""> Nombre:
+        <input type="text" formControlName="nombre" placeholder="Nombre Producto">
+    </label>
+    <label for=""> Tipo:
+        <input type="text" formControlName="tipo" placeholder="tipo">
+    </label>
+    <label for=""> Categoria:
+        <input type="text" formControlName="categoria" placeholder="categoria">
+    </label>
+    <label for=""> descripcion
+        <input type="text" formControlName="descripcion" placeholder="descripcion">
+    </label>
+    <label for=""> precio
+        <input type="number" placeholder="precio" formControlName="precio">
+    </label>
+    <button type="submit" >Enviar Producto</button>
+</form>
+
+

@@ -1,0 +1,20 @@
+<app-header [titulo]="nombreLocal"></app-header>
+<app-loading-spinner *ngIf="showSpinner"></app-loading-spinner>
+<app-comidas 
+    [localElegido]="productos" 
+    [categoria1]="desayuno"
+    [categoria2]='cafeInternacional'
+    [categoria3]='cafeTradicional'
+    [categoria4]='malteadas'
+    [categoria5]='licuados'
+    [categoria6]='jugos'
+    [categoria7]='wafflesDulces'
+    [categoria8]='wafflesSalados'
+    [categoria9]='tostados'
+    [categoria10]='papasFritas'
+    [categoria11]='pizzas'
+    [categoria12]='hamburguesas'
+    [categoria13]='lomos'
+    *ngIf="!showSpinner">    
+</app-comidas>
+<router-outlet></router-outlet>
